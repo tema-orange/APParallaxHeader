@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
-  s.name     = 'APParallaxHeader'
-  s.version  = '0.1.6'
+  s.name     = 'APParallaxHeader-Width'
+  s.version  = '0.1.7'
   s.platform = :ios, '5.0'
   s.license  = 'MIT'
   s.summary  = 'Add a parallax header view to your table views with one row of code.'
   s.homepage = 'https://github.com/apping/APParallaxHeader'
-  s.author   = { 'Mathias Amnell' => 'mathias@apping.se' }
+  s.author   = { 'Mathias Amnell' => 'mathias@apping.se', 'Brandon Shelley' => 'brandon@behemoth.ca'}
   s.source   = { :git => 'https://github.com/apping/APParallaxHeader.git', :tag => s.version.to_s }
 
-  s.description = 'This category makes it super easy to add a parallax header view to your table views. Other alternatives relies on subclassing of UITableViewController or UITableView. Instead, APParallaxHeader uses the Objective-C runtime to add the functionality to your UIScrollView or UITableView.'
+  s.description = 'This category makes it super easy to add a parallax header view to your table views. Other alternatives relies on subclassing of UITableViewController or UITableView. Instead, APParallaxHeader uses the Objective-C runtime to add the functionality to your UIScrollView or UITableView. This version contains methods for configurable width and centering the header.'
 
   s.frameworks   = 'QuartzCore'
   s.source_files = 'APParallaxHeader/*.{h,m}'
