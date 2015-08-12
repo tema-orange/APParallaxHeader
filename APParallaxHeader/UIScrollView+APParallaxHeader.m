@@ -250,13 +250,12 @@ static char UIScrollViewParallaxView;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[customView]|" options:0 metrics:nil views:@{@"customView" : customView}]];
 }
 
-- (void)layoutSubviews
-{
-    [super layoutSubviews];
-    
+- (void)layoutSubviews {
     if (self.shadowView) {
         [self bringSubviewToFront:self.shadowView];
     }
+    
+    [super layoutSubviews];
 }
 
 #pragma mark - Observing
